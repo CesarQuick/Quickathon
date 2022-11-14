@@ -1,0 +1,7 @@
+.header
+{
+    height: 1200px !important;
+}
+body{
+    overflow-y: auto;
+}

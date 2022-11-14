@@ -1,30 +1,139 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en" class="w-screen h-screen overflow-y">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
     <title>Koala</title>
-</head>
-<body>
-    <header>
-        <div class="flex flex-row">
-            <div class="logo">
-                <img src="./koala.png" alt="">
-            </div>
-            <div class="menu">
-                <a href="" class="element">Unete</a>
-            </div>
+  </head>
+  <body class="flex flex-col w-screen h-screen">
+    <header class="">
+      <div class="flex flex-row justify-around items-center align-items-center">
+        <div class="logo self-start place-self-start">
+          <img src="./koala.png" alt="" />
         </div>
+        <div
+          class="flex flex-row justify-center items-center align-items-center gap-x-6"
+        >
+          <a href="#sobre-nosotros" class="element">Sobre nosotros</a>
+          <a href="#nuestra-mision" class="element">Nuestra misión</a>
+          <a href="#" class="element">Nuestros valores</a>
+          <a href="#" class="element">Contactanos</a>
+          <a href="#" class="element">Únete a nosotros</a>
+        </div>
+      </div>
     </header>
+    <section
+      class="bg-[url('./public/bg-one.jpg')] py-20 bg-cover flex flex-col justify-center items-center bg-bottom header"
+    >
+      <h2 class="text-white text-[70px] underline">KOALA</h2>
+      <p class="text-white text-3xl pb-20">
+        Dandole una nueva vida a tus neumaticos
+      </p>
+    </section>
+    <section
+      class="bg-[#557153] flex flex-row w-full justify-center items-center text-white align-items-center"
+    >
+      <div
+        class="flex flex-row justify-center items-center"
+        id="sobre-nosotros"
+      >
+        <p class="w-1/3">
+          Fundada en 2023 por varios estudiantes de 42 Málaga, Koala nace con un
+          proposito y este es el poner en contacto talleres de neumaticos que
+          necesitan reciclar estos. Junto con pequeñas y medianas empresas que
+          puedan procesar estos neumaticos dandole una segunda vida.
+        </p>
+      </div>
+      <div class="w-1/2">
+        <img
+          src="./public/neumaticos.png"
+          alt=""
+          srcset=""
+          class="h-[300px] py-10"
+        />
+      </div>
+    </section>
+    <section class="bg-[#333]" id="nuestra-mision">
+      <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever
+        since the 1500s, when an unknown printer took a galley of type and
+        scrambled it to make a type specimen book. It has survived not only five
+        centuries, but also the leap into electronic typesetting, remaining
+        essentially unchanged. It was popularised in the 1960s with the release
+        of Letraset sheets containing Lorem Ipsum passages, and more recently
+        with desktop publishing software like Aldus PageMaker including versions
+        of Lorem Ipsum.
+      </p>
+    </section>
+    <section class="bg-[#557153]">
+      <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever
+        since the 1500s, when an unknown printer took a galley of type and
+        scrambled it to make a type specimen book. It has survived not only five
+        centuries, but also the leap into electronic typesetting, remaining
+        essentially unchanged. It was popularised in the 1960s with the release
+        of Letraset sheets containing Lorem Ipsum passages, and more recently
+        with desktop publishing software like Aldus PageMaker including versions
+        of Lorem Ipsum.
+      </p>
+    </section>
+    <!-- 
+    <section class="bg-[#557153]">
+      <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever
+        since the 1500s, when an unknown printer took a galley of type and
+        scrambled it to make a type specimen book. It has survived not only five
+        centuries, but also the leap into electronic typesetting, remaining
+        essentially unchanged. It was popularised in the 1960s with the release
+        of Letraset sheets containing Lorem Ipsum passages, and more recently
+        with desktop publishing software like Aldus PageMaker including versions
+        of Lorem Ipsum.
+      </p>
+    </section>
+    <section class="bg-[#557153]">
+      <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever
+        since the 1500s, when an unknown printer took a galley of type and
+        scrambled it to make a type specimen book. It has survived not only five
+        centuries, but also the leap into electronic typesetting, remaining
+        essentially unchanged. It was popularised in the 1960s with the release
+        of Letraset sheets containing Lorem Ipsum passages, and more recently
+        with desktop publishing software like Aldus PageMaker including versions
+        of Lorem Ipsum.
+      </p>
+    </section>
     <section class="bg-[#557153]">
         <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only five
+          centuries, but also the leap into electronic typesetting, remaining
+          essentially unchanged. It was popularised in the 1960s with the release
+          of Letraset sheets containing Lorem Ipsum passages, and more recently
+          with desktop publishing software like Aldus PageMaker including versions
+          of Lorem Ipsum.
         </p>
-    </section>
-    <section>
-<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-    </section>
-</body>
+      </section>
+      <section class="bg-[#557153]">
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s, when an unknown printer took a galley of type and
+          scrambled it to make a type specimen book. It has survived not only five
+          centuries, but also the leap into electronic typesetting, remaining
+          essentially unchanged. It was popularised in the 1960s with the release
+          of Letraset sheets containing Lorem Ipsum passages, and more recently
+          with desktop publishing software like Aldus PageMaker including versions
+          of Lorem Ipsum.
+        </p>
+      </section> -->
+  </body>
 </html>
