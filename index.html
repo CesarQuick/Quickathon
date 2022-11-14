@@ -1,14 +1,19 @@
 <!DOCTYPE html>
-<html lang="en" class="w-screen h-screen overflow-y">
+<html lang="en" class="overflow-y">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
     <title>Koala</title>
   </head>
-  <body class="flex flex-col w-screen h-screen">
+  <body class="flex flex-col">
     <header class="">
       <div class="flex flex-row justify-around items-center align-items-center">
         <div class="logo self-start place-self-start">
@@ -17,123 +22,200 @@
         <div
           class="flex flex-row justify-center items-center align-items-center gap-x-6"
         >
-          <a href="#sobre-nosotros" class="element">Sobre nosotros</a>
-          <a href="#nuestra-mision" class="element">Nuestra misión</a>
-          <a href="#" class="element">Nuestros valores</a>
-          <a href="#" class="element">Contactanos</a>
-          <a href="#" class="element">Únete a nosotros</a>
+          <a
+            href="#sobre-nosotros"
+            class="element hover:scale-125 hover:underline"
+            >Sobre nosotros</a
+          >
+          <a
+            href="#nuestra-mision"
+            class="element hover:scale-125 hover:underline"
+            >Nuestra misión</a
+          >
+          <a
+            href="#nuestos-partners"
+            class="element hover:scale-125 hover:underline"
+            >Nuestros partners</a
+          >
+          <a href="#contactanos" class="element hover:scale-125 hover:underline"
+            >Contactanos</a
+          >
+          <a href="#unete" class="element hover:scale-125 hover:underline"
+            >Únete a nosotros</a
+          >
         </div>
       </div>
     </header>
     <section
       class="bg-[url('./public/bg-one.jpg')] py-20 bg-cover flex flex-col justify-center items-center bg-bottom header"
     >
-      <h2 class="text-white text-[70px] underline">KOALA</h2>
-      <p class="text-white text-3xl pb-20">
+      <h2
+        class="text-white text-[120px] underline hover:scale-125 hover:opacity-70"
+      >
+        KOALA
+      </h2>
+      <p
+        class="text-white text-5xl pb-20 pt-14 hover:scale-125 hover:opacity-70"
+      >
         Dandole una nueva vida a tus neumaticos
       </p>
     </section>
     <section
-      class="bg-[#557153] flex flex-row w-full justify-center items-center text-white align-items-center"
+      class="bg-[#557153] flex-col flex justify-center items-center align-items-center"
+      id="sobre-nosotros"
     >
+      <h2 class="pt-20 text-white text-4xl underline">Sobre nosotros</h2>
       <div
-        class="flex flex-row justify-center items-center"
-        id="sobre-nosotros"
+        class="flex flex-row w-full justify-center items-center text-white align-items-center py-10 text-2xl"
       >
-        <p class="w-1/3">
-          Fundada en 2023 por varios estudiantes de 42 Málaga, Koala nace con un
-          proposito y este es el poner en contacto talleres de neumaticos que
-          necesitan reciclar estos. Junto con pequeñas y medianas empresas que
-          puedan procesar estos neumaticos dandole una segunda vida.
-        </p>
+        <div class="flex flex-row justify-center items-center w-1/2">
+          <p class="w-1/2">
+            Fundada en 2023 por varios estudiantes de 42 Málaga, Koala nace con
+            un proposito y este es el poner en contacto talleres de neumaticos
+            que necesitan reciclar estos. Junto con pequeñas y medianas empresas
+            que puedan procesar estos neumaticos dandole una segunda vida.
+          </p>
+        </div>
+        <div class="w-1/2 flex flex-row justify-center items-center">
+          <img
+            src="./public/neumaticos.png"
+            alt=""
+            srcset=""
+            class="h-[300px] py-10 rounded rounded-3xl"
+          />
+        </div>
       </div>
-      <div class="w-1/2">
-        <img
-          src="./public/neumaticos.png"
-          alt=""
-          srcset=""
-          class="h-[300px] py-10"
-        />
+    </section>
+    <section
+      class="bg-[#E6E5A3] flex-col flex justify-center items-center align-items-center"
+      id="nuestra-mision"
+    >
+      <h2 class="pt-20 text-black text-4xl underline">Nuestra misión</h2>
+      <div
+        class="flex flex-row justify-center items-center text-black py-20 text-2xl"
+      >
+        <div class="w-1/2 flex flex-row justify-center items-center py-10">
+          <img
+            src="./public/montana.jpeg"
+            alt=""
+            class="w-1/2 rounded rounded-3xl"
+          />
+        </div>
+        <div class="w-1/2 flex flex-row justify-center items-center">
+          <p class="w-1/2">
+            Nuestro principal misión es beneficiar al ecosistema, dandole una
+            segunda vida a los neumaticos gracias a la colaboración tanto de
+            empresas montadoras de neumaticos como empresas procesadoras de
+            plásticos.
+          </p>
+        </div>
       </div>
     </section>
-    <section class="bg-[#333]" id="nuestra-mision">
-      <p>
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever
-        since the 1500s, when an unknown printer took a galley of type and
-        scrambled it to make a type specimen book. It has survived not only five
-        centuries, but also the leap into electronic typesetting, remaining
-        essentially unchanged. It was popularised in the 1960s with the release
-        of Letraset sheets containing Lorem Ipsum passages, and more recently
-        with desktop publishing software like Aldus PageMaker including versions
-        of Lorem Ipsum.
-      </p>
+    <section
+      class="bg-[#557153] flex-col flex justify-center items-center align-items-center"
+      id="nuestos-partners"
+    >
+      <h2 class="pt-20 text-white text-4xl underline">Nuestros partners</h2>
+      <div
+        class="flex flex-row justify-center items-center text-white py-20 text-2xl"
+      >
+        <div class="w-1/2 flex flex-row justify-center items-center">
+          <p class="w-1/2">
+            A pesar de ser una empresa de nueva creación ya contamos con el
+            apoyo de 5 empresas que nos entregan neumaticos y también con 3
+            empresas que procesan los mismos. Consiguiendo con esto que ninguna
+            de las 5 empresas montadoras de neumaticos tenga que desperdiciar su
+            excedente y este quede reciclado y aprovechado en una nueva vida.
+          </p>
+        </div>
+        <div class="w-1/2 flex flex-row justify-center items-center py-10">
+          <img
+            src="./public/delicias.jpeg"
+            alt=""
+            class="w-1/2 rounded rounded-3xl"
+          />
+        </div>
+      </div>
     </section>
-    <section class="bg-[#557153]">
-      <p>
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever
-        since the 1500s, when an unknown printer took a galley of type and
-        scrambled it to make a type specimen book. It has survived not only five
-        centuries, but also the leap into electronic typesetting, remaining
-        essentially unchanged. It was popularised in the 1960s with the release
-        of Letraset sheets containing Lorem Ipsum passages, and more recently
-        with desktop publishing software like Aldus PageMaker including versions
-        of Lorem Ipsum.
-      </p>
+    <section
+      class="bg-white flex-col flex justify-center items-center align-items-center"
+      id="contactanos"
+    >
+      <h2 class="pt-20 text-black text-4xl underline">Contactanos</h2>
+      <p class="pt-4 text-black text-2xl">¿Quieres colaborar con nosotros? <hr> Dejanos un mensaje y te contactaremos lo antes posible</p>
+      <div
+        class="flex flex-row justify-center items-center w-full text-white py-20 text-2xl"
+      >
+        <form class="w-1/2">
+          <div class="mb-6">
+            <label
+              for="email"
+              class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+              >Tu email</label
+            >
+            <input
+              type="email"
+              id="email"
+              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              placeholder="tucorreo@gmail.com"
+              required
+            />
+          </div>
+          <div class="mb-6">
+            <label
+              for="description"
+              class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+              >Mensaje</label
+            >
+            <input
+              type="text"
+              id="description"
+              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              required
+            />
+          </div>
+          <div class="mb-6">
+            <label
+              for="telefono"
+              class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+              >Telefono</label
+            >
+            <input
+              type="tel"
+              id="telefono"
+              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              required
+            />
+          </div>
+          <button
+            type="submit"
+            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
     </section>
-    <!-- 
-    <section class="bg-[#557153]">
-      <p>
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever
-        since the 1500s, when an unknown printer took a galley of type and
-        scrambled it to make a type specimen book. It has survived not only five
-        centuries, but also the leap into electronic typesetting, remaining
-        essentially unchanged. It was popularised in the 1960s with the release
-        of Letraset sheets containing Lorem Ipsum passages, and more recently
-        with desktop publishing software like Aldus PageMaker including versions
-        of Lorem Ipsum.
-      </p>
+    <section
+      class="bg-[#557153] flex-col flex justify-center items-center align-items-center py-20"
+      id="nuestos-partners"
+    >
+      <h2 class=" text-white text-4xl underline">
+        ¿Ya eres partner nuestro?
+      </h2>
+      <p class="pt-4 text-white text-2xl">Accede a la plataforma</p>
+      <button
+        type="button"
+        class="mt-4 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+      >
+        Log In
+      </button>
     </section>
-    <section class="bg-[#557153]">
-      <p>
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever
-        since the 1500s, when an unknown printer took a galley of type and
-        scrambled it to make a type specimen book. It has survived not only five
-        centuries, but also the leap into electronic typesetting, remaining
-        essentially unchanged. It was popularised in the 1960s with the release
-        of Letraset sheets containing Lorem Ipsum passages, and more recently
-        with desktop publishing software like Aldus PageMaker including versions
-        of Lorem Ipsum.
-      </p>
-    </section>
-    <section class="bg-[#557153]">
-        <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only five
-          centuries, but also the leap into electronic typesetting, remaining
-          essentially unchanged. It was popularised in the 1960s with the release
-          of Letraset sheets containing Lorem Ipsum passages, and more recently
-          with desktop publishing software like Aldus PageMaker including versions
-          of Lorem Ipsum.
-        </p>
-      </section>
-      <section class="bg-[#557153]">
-        <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book. It has survived not only five
-          centuries, but also the leap into electronic typesetting, remaining
-          essentially unchanged. It was popularised in the 1960s with the release
-          of Letraset sheets containing Lorem Ipsum passages, and more recently
-          with desktop publishing software like Aldus PageMaker including versions
-          of Lorem Ipsum.
-        </p>
-      </section> -->
+    <footer class="w-full bg-[#E6E5A3] flex flex-row justify-center py-8">
+      <h4 class="">
+        Koala © 2023 | By César Iriso for Quickathon 14 Nov 2022
+      </h4>
+    </footer>
+    <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>
   </body>
 </html>
