@@ -1,11 +1,53 @@
-.header
-{
-    height: 1200px !important;
+.header {
+  height: 1200px !important;
 }
-body{
-    overflow-y: auto;
+body {
+  overflow-y: auto;
 }
-html
-{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
+}
+
+.spikes {
+  position: relative;
+  background: #557153;
+  height: 50vh;
+}
+
+.spikes::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  left: -43%;
+  top: 100%;
+  z-index: 10;
+  display: block;
+  height: 55px;
+  background-size: 55px 100%;
+  background-image: linear-gradient(135deg, #557153 25%, transparent 25%),
+    linear-gradient(225deg, #557153 25%, transparent 25%);
+  background-position: 0 0;
+}
+
+.top {
+  --top: linear-gradient(#000 0 0) top/100% calc(100% - 50px) no-repeat,
+    radial-gradient(farthest-side, #000 98%, #0000) bottom/100px 100px no-repeat;
+  -webkit-mask: var(--top);
+  mask: var(--top);
+}
+.bottom {
+  --bottom: radial-gradient(calc(10px + 50px) at 50% -10px, #0000 98%, #000);
+  -webkit-mask: var(--bottom);
+  mask: var(--bottom);
+  margin-top: -40px;
+}
+
+.shadow {
+    -webkit-box-shadow: 10px 10px 30px 3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 30px 3px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 30px 3px rgba(0,0,0,0.75);
+}
+
+.text-shadow{
+    text-shadow: 2px 2px #000000;
 }
